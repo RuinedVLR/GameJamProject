@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  sensitivity: 2
   jumpHeight: 1.5
   gravity: -9.81
 --- !u!143 &1234642726
