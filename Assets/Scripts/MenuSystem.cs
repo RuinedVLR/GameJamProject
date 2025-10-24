@@ -43,7 +43,7 @@ public class MenuSystem : MonoBehaviour
     public void Credits()
     {
         Debug.Log("Opening credits...");
-        CreditsMenu.SetActive(true);
+        //CreditsMenu.SetActive(true);
     }
 
     public void ReturnToMenu()
