@@ -6,6 +6,7 @@ public class MenuSystem : MonoBehaviour
 {
     public GameObject CreditsMenu;
     public GameObject PauseMenu;
+    public GameObject MainMenuUI;
     public bool isPaused = false;
 
     public void PlayGame()
@@ -24,6 +25,7 @@ public class MenuSystem : MonoBehaviour
 
     public void PauseGame()
     {
+        DisableAllUI();
         PauseMenu.SetActive(true);
         Time.timeScale = 0;
 
@@ -40,15 +42,23 @@ public class MenuSystem : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void DisableAllUI()
+    {
+        MainMenuUI.SetActive(false);
+        PauseMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
+    }
+
     public void Credits()
     {
-        Debug.Log("Opening credits...");
-        //CreditsMenu.SetActive(true);
+        DisableAllUI();
+        CreditsMenu.SetActive(true);
     }
 
     public void ReturnToMenu()
     {
-        CreditsMenu.SetActive(false);
+        DisableAllUI();
+        MainMenuUI.SetActive(true);
     }
 
     public void MainMenu()
