@@ -1661,7 +1661,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+
   m_LocalEulerAnglesHint: {x: 77.006, y: -30, z: 0}
+
 --- !u!114 &1868725531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,6 +1687,7 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+
 --- !u!1 &1943292504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2000,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
