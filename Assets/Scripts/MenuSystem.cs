@@ -42,7 +42,13 @@ public class MenuSystem : MonoBehaviour
 
     public void Credits()
     {
+        Debug.Log("Opening credits...");
         CreditsMenu.SetActive(true);
+    }
+
+    public void ReturnToMenu()
+    {
+        CreditsMenu.SetActive(false);
     }
 
     public void MainMenu()
