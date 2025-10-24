@@ -3,6 +3,8 @@ using UnityEngine;
 public enum SoundType
 {
     //give the sounds Names
+    CLICKSOUND,
+    HOVERSOUND,
 }
 
 [RequireComponent(typeof(AudioSource))]
