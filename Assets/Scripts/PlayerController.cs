@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
+    public float sensitivity = 2f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.81f;
 
@@ -39,5 +40,11 @@ public class PlayerController : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+
+        transform.Rotate(Vector3.up * mouseX);
+        Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
     }
 }
