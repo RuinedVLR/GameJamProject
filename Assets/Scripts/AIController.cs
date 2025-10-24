@@ -12,11 +12,12 @@ public class AIController : MonoBehaviour
     bool HitDestPoint;
     bool WalkPointSet;
     bool PlayerInSight, PlayerInAttackRange;
-    
+    BoxCollider AttackCollider;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         Player = GameObject.Find("Player");
+        AttackCollider = GetComponentInChildren<BoxCollider>();
     }
     void Chase()
     {
@@ -40,7 +41,23 @@ public class AIController : MonoBehaviour
     }
     void Attack()
     {
-
+        agent.SetDestination(transform.position);
+    }
+    void EnableAttack()
+    {
+        AttackCollider.enabled = true;
+    }
+    void DesableAttack()
+    {
+        AttackCollider.enabled = false;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        var Player = other.GetComponent<CharacterController>();
+        if(Player != null)
+        {
+            print("hit");
+        }
     }
 
     void Update()
