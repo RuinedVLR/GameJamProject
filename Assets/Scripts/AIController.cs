@@ -12,11 +12,12 @@ public class AIController : MonoBehaviour
     bool HitDestPoint;
     bool WalkPointSet;
     bool PlayerInSight, PlayerInAttackRange;
-    
+    BoxCollider AttackCollider;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         Player = GameObject.Find("Player");
+        AttackCollider = GetComponentInChildren<BoxCollider>();
     }
     void Chase()
     {
@@ -38,10 +39,33 @@ public class AIController : MonoBehaviour
             WalkPointSet = true;
         }
     }
+    void Attack()
+    {
+        agent.SetDestination(transform.position);
+    }
+    void EnableAttack()
+    {
+        AttackCollider.enabled = true;
+    }
+    void DesableAttack()
+    {
+        AttackCollider.enabled = false;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        var Player = other.GetComponent<CharacterController>();
+        if(Player != null)
+        {
+            print("hit");
+        }
+    }
 
     void Update()
     {
-        PlayerInSight = Physics.CheckSphere(transform.position, SightRange);
-        Patrol();
+        PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
+        PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
+        if(!PlayerInSight && !PlayerInAttackRange)Patrol();
+        if(PlayerInSight && !PlayerInAttackRange)Chase();
+        if(PlayerInSight && PlayerInAttackRange)Attack();
     }
 }
