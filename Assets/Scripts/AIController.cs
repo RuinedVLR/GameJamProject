@@ -8,6 +8,7 @@ public class AIController : MonoBehaviour
     Vector3 DestPoint;
     [SerializeField] float SightRange, AttackRange;
     [SerializeField] LayerMask GroundLayer, PlayerLayer;
+    [SerializeField] float range;
     bool HitDestPoint;
     bool WalkPointSet;
     bool PlayerInSight, PlayerInAttackRange;
@@ -23,13 +24,24 @@ public class AIController : MonoBehaviour
     }
     void Patrol()
     {
-        if (!WalkPointSet) ;
+        if (!WalkPointSet) SearchForDest();
         if(WalkPointSet) agent.SetDestination(DestPoint);
         if(Vector3.Distance(transform.position, DestPoint)< 10) WalkPointSet = false;
+    }
+    void SearchForDest()
+    {
+        float x = Random.Range(-range, range);
+        float z = Random.Range(-range, range);
+        DestPoint = new Vector3(transform.position.x + x, transform.position.y,transform.position.z + z);
+        if (Physics.Raycast(DestPoint, Vector3.down, GroundLayer))
+        {
+            WalkPointSet = true;
+        }
     }
 
     void Update()
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange);
+        Patrol();
     }
 }
