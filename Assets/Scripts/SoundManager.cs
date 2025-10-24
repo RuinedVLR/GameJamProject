@@ -1,16 +1,29 @@
 using UnityEngine;
 
-public class rigi : MonoBehaviour
+public enum SoundType
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //give the sounds Names
+}
+
+[RequireComponent(typeof(AudioSource))]
+public class SoundManager : MonoBehaviour
+{
+    [SerializeField] private AudioClip[] soundList;
+    private static SoundManager instance;
+    private AudioSource audioSource;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public static void PlaySound(SoundType sound, float volume = 1)
+    {
+        instance.audioSource.PlayOneShot(instance.soundList[(int)sound], volume);
     }
 }
