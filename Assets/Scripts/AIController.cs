@@ -38,10 +38,17 @@ public class AIController : MonoBehaviour
             WalkPointSet = true;
         }
     }
+    void Attack()
+    {
+
+    }
 
     void Update()
     {
-        PlayerInSight = Physics.CheckSphere(transform.position, SightRange);
-        Patrol();
+        PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
+        PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
+        if(!PlayerInSight && !PlayerInAttackRange)Patrol();
+        if(PlayerInSight && !PlayerInAttackRange)Chase();
+        if(PlayerInSight && PlayerInAttackRange)Attack();
     }
 }
