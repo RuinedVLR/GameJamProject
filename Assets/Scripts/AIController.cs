@@ -84,14 +84,24 @@ public class AIController : MonoBehaviour
     {
         AttackCollider.enabled = false;
     }
-    public void OnTriggerEnter(Collider other)
+    public void OnCollision(Collider other)
     {
-        var Player = other.GetComponent<PlayerController>();
-        if(Player != null)
+        if(other.gameObject.CompareTag("Player"))
         {
-            
-            print("hit");
+            Debug.Log("Collided with player.");
+
+            PlayerController playerScript = other.GetComponent<PlayerController>();
+            if (playerScript == null) Debug.LogError("PlayerController not found");
+
+            else if (playerScript != null)
+            {
+                // apply damage to player
+                playerScript.currentHealth -= 50;
+                print("hit");
+            }
         }
+
+        
     }
 
     void Update()
