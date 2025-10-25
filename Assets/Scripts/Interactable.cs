@@ -58,4 +58,10 @@ public class Interactable : MonoBehaviour
         isCrowbarPresent = true;
         crowbar.SetActive(false);
     }
+
+    public void PageNote(GameObject noteText)
+    {
+        noteText.SetActive(true);
+        Time.timeScale = 0;
+    }
 }
