@@ -10,6 +10,7 @@ public class AIController : MonoBehaviour
     Vector3 DestPoint;
     public List<Transform> patrolPoints;
     public float waitTime = 2f;
+    public float agrostance = 1.4f;
     public float walkspeed = 2f;
     public float agrospeed = 6.5f;
     Transform LastDestination;
@@ -21,7 +22,6 @@ public class AIController : MonoBehaviour
     bool HitDestPoint;
     bool WalkPointSet;
     bool isWaiting = false;
-    bool agro = false;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
     void Start()
@@ -34,10 +34,13 @@ public class AIController : MonoBehaviour
     }
     void Chase()
     {
+        
+        agent.speed = agrospeed;
         agent.SetDestination(Player.transform.position);
     }
     void Patrol()
-    {
+    {        
+        agent.speed = walkspeed;
         if (!WalkPointSet) SearchForDest();
         if(WalkPointSet) agent.SetDestination(DestPoint);
         if(Vector3.Distance(transform.position, DestPoint)< 10) WalkPointSet = false;
@@ -53,15 +56,11 @@ public class AIController : MonoBehaviour
 
     void SearchForDest()
     {
-
-        if (patrolPoints.Count == 0) return;
-
-        
+        if (patrolPoints.Count == 0) return;       
         do
         {
             nextDestination = patrolPoints[Random.Range(0, patrolPoints.Count)];
         } while (nextDestination == LastDestination && patrolPoints.Count > 1);
-
         CurrentDestination = nextDestination;
         LastDestination = CurrentDestination;
         agent.SetDestination(CurrentDestination.position);
@@ -99,9 +98,9 @@ public class AIController : MonoBehaviour
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
-        if(!PlayerInSight && !PlayerInAttackRange)Patrol();
+        if (!PlayerInSight && !PlayerInAttackRange)Patrol(); 
         if(PlayerInSight && !PlayerInAttackRange)Chase();
-        if(PlayerInSight && PlayerInAttackRange)Attack();
+        if (PlayerInSight && PlayerInAttackRange)Attack(); 
 
         //if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)
