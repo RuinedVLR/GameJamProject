@@ -10,6 +10,8 @@ public class AIController : MonoBehaviour
     Vector3 DestPoint;
     public List<Transform> patrolPoints;
     public float waitTime = 2f;
+    public float walkspeed = 2f;
+    public float agrospeed = 6.5f;
     Transform LastDestination;
     Transform CurrentDestination;
     Transform nextDestination;
@@ -19,6 +21,7 @@ public class AIController : MonoBehaviour
     bool HitDestPoint;
     bool WalkPointSet;
     bool isWaiting = false;
+    bool agro = false;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
     void Start()
@@ -27,6 +30,7 @@ public class AIController : MonoBehaviour
         Player = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
         SearchForDest();
+        agent.speed = walkspeed;
     }
     void Chase()
     {
@@ -86,6 +90,7 @@ public class AIController : MonoBehaviour
         var Player = other.GetComponent<PlayerController>();
         if(Player != null)
         {
+            
             print("hit");
         }
     }
