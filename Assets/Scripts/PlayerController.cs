@@ -8,6 +8,13 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 1.5f;
     public float gravity = -9.81f;
 
+    public float crouchSpeed;
+    public float crouchHeight;
+    public float normalHeight;
+    public Vector3 offset;
+    public Transform player;
+    bool crouching;
+
     private bool isGrounded;
     private Vector3 velocity;
     private CharacterController controller;
@@ -19,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -34,7 +42,14 @@ public class PlayerController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
-        controller.Move(move * speed * Time.deltaTime);
+        if (!crouching)
+        {
+            controller.Move(move * speed * Time.deltaTime);
+        }
+        else if (crouching)
+        {
+            controller.Move(move * (speed / 2) * Time.deltaTime);
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -44,10 +59,42 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+        if(!Interactable.isReading)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * sensitivity;
+            float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
-        transform.Rotate(Vector3.up * mouseX);
-        Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
+            transform.Rotate(Vector3.up * mouseX);
+            Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            crouching = !crouching;
+        }
+        if (crouching == true)
+        {
+            controller.height = controller.height - crouchSpeed * Time.deltaTime;
+            if (controller.height <= crouchHeight)
+            {
+                controller.height = crouchHeight;
+            }
+        }
+        if (crouching == false)
+        {
+            controller.height = controller.height + crouchSpeed * Time.deltaTime;
+            if (controller.height < normalHeight)
+            {
+                player.gameObject.SetActive(false);
+                player.position = player.position + offset * Time.deltaTime;
+                player.gameObject.SetActive(true);
+            }
+
+            if (controller.height >= normalHeight)
+            {
+                controller.height = normalHeight;
+            }
+        }
+
     }
 }
