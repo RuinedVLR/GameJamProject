@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2495bc7d6b435e45ae938471a05ed62
+guid: d3ee6c4df5fbd6a44897f88de9c4b16e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,33 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Screenshot 2025-10-25 115331
-    second: {fileID: 2800000, guid: 85c5fdf8b6c56684dbcf7317a07bc8c1, type: 3}
+      name: Texturelabs_Brick_162S
+    second: {fileID: 2800000, guid: 680d4162e36ae33489cfd353289de750, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Screenshot_2025-10-25_115324
-    second: {fileID: 2800000, guid: 29c02f48fb4772d4e9d40b29cfbe12d2, type: 3}
+      name: Texturelabs_Brick_169S
+    second: {fileID: 2800000, guid: 2cafe4b3fee3ad44eaebcc5ec0422c02, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Screenshot_2025-10-25_115331
-    second: {fileID: 2800000, guid: b039db305e514cb4199351c859274f26, type: 3}
+      name: Texturelabs_Glass_150S
+    second: {fileID: 2800000, guid: a2848f6b9d89da24e813b258841b6104, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Textured_Aged_Wall_Background_Free_Stock_Photo
-    second: {fileID: 2800000, guid: 0b13a3b04d7ae1a4ab4e509394243467, type: 3}
+      name: Texturelabs_Wood_235S
+    second: {fileID: 2800000, guid: 5402398529174e64da5c133d26cbe651, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: download (10)
-    second: {fileID: 2800000, guid: a1fe7dbc503dada4982c9ab20d9c47d6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: download (6)
-    second: {fileID: 2800000, guid: 65117855216198d4483f39fe6ff2e422, type: 3}
+      name: photo-stone-texture-pattern
+    second: {fileID: 2800000, guid: 79d29da2b2a465240b06affb06de51de, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
