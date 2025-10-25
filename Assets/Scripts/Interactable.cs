@@ -8,6 +8,10 @@ public class Interactable : MonoBehaviour
     Outline outline;
     public string message;
 
+    public bool isShovelPresent;
+    public bool isFlashlightPresent;
+    public bool isCrowbarPresent;
+
     public UnityEvent onInteraction;
 
 
@@ -38,4 +42,27 @@ public class Interactable : MonoBehaviour
         SceneManager.LoadScene("3_GamePlayScene");
     }
 
+    public void PickShovel(GameObject shovel)
+    {
+        isShovelPresent = true;
+        shovel.SetActive(false);
+    }
+
+    public void PickFlashlight(GameObject flashlight)
+    {
+        isFlashlightPresent = true;
+        flashlight.SetActive(false);
+    }
+
+    public void PickCrowbar(GameObject crowbar)
+    {
+        isCrowbarPresent = true;
+        crowbar.SetActive(false);
+    }
+
+    public void ReadNote(GameObject noteText)
+    {
+        noteText.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }
