@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -58,11 +59,14 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+        if(!Interactable.isReading)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * sensitivity;
+            float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
-        transform.Rotate(Vector3.up * mouseX);
-        Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
+            transform.Rotate(Vector3.up * mouseX);
+            Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {

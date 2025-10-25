@@ -11,6 +11,7 @@ public class Interactable : MonoBehaviour
     public bool isShovelPresent;
     public bool isFlashlightPresent;
     public bool isCrowbarPresent;
+    public static bool isReading;
 
     public UnityEvent onInteraction;
 
@@ -63,6 +64,8 @@ public class Interactable : MonoBehaviour
     public void ReadNote(GameObject noteText)
     {
         noteText.SetActive(true);
+        isReading = true;
+        Cursor.visible = true;
         Time.timeScale = 0f;
     }
 }
