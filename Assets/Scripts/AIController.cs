@@ -12,6 +12,7 @@ public class AIController : MonoBehaviour
     public float waitTime = 2f;
     public float walkspeed = 2f;
     public float agrospeed = 6.5f;
+    public float attackCooldown = 2.5f;
     Transform LastDestination;
     Transform CurrentDestination;
     Transform nextDestination;
@@ -22,6 +23,7 @@ public class AIController : MonoBehaviour
     bool WalkPointSet;
     bool isWaiting = false;
     bool hasReactedToPlayer = false;
+    bool canAttack = true;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
     void Start()
@@ -60,6 +62,13 @@ public class AIController : MonoBehaviour
         agent.SetDestination(transform.position); // Stop moving
         yield return new WaitForSeconds(1.5f);     // Wait for 1.5 seconds
         hasReactedToPlayer = false;
+    }
+
+    IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
     }
 
     void SearchForDest()
@@ -105,9 +114,6 @@ public class AIController : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
 
-                print("hit");
-                Debug.Log("Collided with player.");
-
                 PlayerController playerScript = other.GetComponent<PlayerController>();
                 if (playerScript == null) Debug.LogError("PlayerController not found");
 
@@ -115,8 +121,9 @@ public class AIController : MonoBehaviour
                 {
                     // apply damage to player
                     playerScript.currentHealth -= 50;
-                    print("hit");
-                    yield return new WaitForSeconds(2.5f);
+                    
+                    StartCoroutine(AttackCooldown());
+                    Debug.Log("hit");
                 }
             }
     }
