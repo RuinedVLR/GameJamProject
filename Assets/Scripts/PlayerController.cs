@@ -4,21 +4,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
-    public float sprintMultiplier = 1.5f;
     public float sensitivity = 2f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.81f;
-
-    [Header("Stamina")]
-    [SerializeField] private float runStaminaConsumption = 2;
-    [SerializeField] private float jumpStaminaConsumption = 4;
-    [SerializeField] private float staminaRechargeRate = 2;
-    [SerializeField] private float maxStamina = 10;
-    private float stamina;
-
-    //input bools
-    bool jump = false;
-    bool run = false;
 
     private bool isGrounded;
     private Vector3 velocity;
@@ -30,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        stamina = maxStamina;
         controller = GetComponent<CharacterController>();
     }
 
@@ -43,17 +30,13 @@ public class PlayerController : MonoBehaviour
             velocity.y = 0;
         }
 
-        jump = Input.GetButtonDown("Jump") && isGrounded && stamina > jumpStaminaConsumption;
-        run = Input.GetButton("Sprint") && stamina > 0f;
-
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
-        float movespeed = GetMoveSpeed();
         controller.Move(move * speed * Time.deltaTime);
 
-        if (jump)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
@@ -66,32 +49,5 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(Vector3.up * mouseX);
         Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
-
-        HandleStamina();
-    }
-
-    //function for determining the movespeed of the character
-    private float GetMoveSpeed()
-    {
-        float moveSpeed;
-
-        moveSpeed = run ? speed * sprintMultiplier : speed;
-
-        return moveSpeed;
-    }
-
-    private void HandleStamina()
-    {
-        if (!run && !jump && stamina <= maxStamina)
-        {
-            stamina += staminaRechargeRate * Time.deltaTime;
-        }
-        else
-        {
-            if (run) stamina -= runStaminaConsumption * Time.deltaTime;
-            if (jump) stamina -= jumpStaminaConsumption;
-        }
-
-        Debug.Log(stamina);
     }
 }
