@@ -1295,6 +1295,7 @@ MonoBehaviour:
   - {fileID: 945749416}
   - {fileID: 350376067}
   waitTime: 2
+  agrostance: 1.4
   walkspeed: 3.5
   agrospeed: 5
   SightRange: 7.5
