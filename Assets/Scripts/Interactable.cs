@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
 {
@@ -30,6 +31,11 @@ public class Interactable : MonoBehaviour
     public void EnableOutline()
     {
         outline.enabled = true;
+    }
+
+    public void RunStart()
+    {
+        SceneManager.LoadScene("3_GamePlayScene");
     }
 
 }
