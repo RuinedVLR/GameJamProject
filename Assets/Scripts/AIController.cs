@@ -21,6 +21,7 @@ public class AIController : MonoBehaviour
     bool HitDestPoint;
     bool WalkPointSet;
     bool isWaiting = false;
+    bool hasReactedToPlayer = false;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
     void Start()
@@ -53,6 +54,14 @@ public class AIController : MonoBehaviour
         isWaiting = false;
     }
 
+    IEnumerator ReactToPlayer()
+    {
+        hasReactedToPlayer = true;
+        agent.SetDestination(transform.position); // Stop moving
+        yield return new WaitForSeconds(1.5f);     // Wait for 1.5 seconds
+        hasReactedToPlayer = false;
+    }
+
     void SearchForDest()
     {
         if (patrolPoints.Count == 0) return;
@@ -63,7 +72,12 @@ public class AIController : MonoBehaviour
         } while (nextDestination == LastDestination && patrolPoints.Count > 1);
         CurrentDestination = nextDestination;
         LastDestination = CurrentDestination;
-        agent.SetDestination(CurrentDestination.position);
+
+        DestPoint = CurrentDestination.position;
+        WalkPointSet = true;
+
+       // agent.SetDestination(CurrentDestination.position);
+
         //float x = Random.Range(-range, range);
         //float z = Random.Range(-range, range);
         //DestPoint = new Vector3(transform.position.x + x, transform.position.y,transform.position.z + z);
@@ -110,9 +124,30 @@ public class AIController : MonoBehaviour
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
-        if (!PlayerInSight && !PlayerInAttackRange) Patrol();
-        if (PlayerInSight && !PlayerInAttackRange) Chase();
-        if (PlayerInSight && PlayerInAttackRange) Attack();
+
+        if (!PlayerInSight && !PlayerInAttackRange)
+        {
+            Patrol();
+        }
+        else if (PlayerInSight && !PlayerInAttackRange)
+        {
+            if (!hasReactedToPlayer)
+            {
+                StartCoroutine(ReactToPlayer());
+            }
+            else
+            {
+                Chase();
+            }
+        }
+        else if (PlayerInSight && PlayerInAttackRange)
+        {
+            Attack();
+        }
+
+        //if (!PlayerInSight && !PlayerInAttackRange) Patrol();
+        //if (PlayerInSight && !PlayerInAttackRange) Chase();
+        //if (PlayerInSight && PlayerInAttackRange) Attack();
 
         //if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)

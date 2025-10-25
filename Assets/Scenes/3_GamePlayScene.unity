@@ -5923,10 +5923,10 @@ MonoBehaviour:
   - {fileID: 2007580493}
   - {fileID: 1401670850}
   - {fileID: 1334468900}
-  waitTime: 3.5
-  walkspeed: 2
+  waitTime: 3.3
+  walkspeed: 3.2
   agrospeed: 6.5
-  SightRange: 7.5
+  SightRange: 9.1
   AttackRange: 2
   GroundLayer:
     serializedVersion: 2
