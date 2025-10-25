@@ -11,7 +11,10 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Vector3 velocity;
     private CharacterController controller;
-
+    //Health
+    public float maxHealth = 100;
+    public float currentHealth;
+    [SerializeField] public HealthBar healthBar;
 
     void Start()
     {
