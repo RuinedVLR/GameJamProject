@@ -2236,13 +2236,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69eab89a5877d9542832b6c1c89e419f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawMode: 1
   mapWidth: 200
   mapHeight: 200
-  noiseScale: 30.87
-  octaves: 4
-  persistance: 0.51
-  lacunarity: 2
+  noiseScale: 27.24
+  octaves: 7
+  persistance: 0.539
+  lacunarity: 2.16
+  seed: 0
+  offset: {x: 15.61, y: 0}
   autoUpdate: 1
+  regions:
+  - name: LowGround
+    height: 0.2
+    color: {r: 0.1981132, g: 0, b: 0.093553476, a: 0}
+  - name: Lowground(upper)
+    height: 0.4
+    color: {r: 0.49056602, g: 0, b: 0.36241335, a: 0}
+  - name: HighGround
+    height: 0.85
+    color: {r: 0.3018868, g: 0.0014239977, b: 0.22068061, a: 0}
+  - name: HighGround(upper)
+    height: 1
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1879103301
 Transform:
   m_ObjectHideFlags: 0
