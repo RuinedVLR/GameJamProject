@@ -1015,8 +1015,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1234642720}
-  SightRange: 0
-  AttackRange: 0
+  patrolPoints: []
+  waitTime: 2
+  SightRange: 7.5
+  AttackRange: 2
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
