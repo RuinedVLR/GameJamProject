@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     //Health
     public float maxHealth = 100;
-    public float currentHealth;
-    [SerializeField] public HealthBar healthBar;
+    public float currentHealth; //take damage: currentHealth -= 20;
+    [SerializeField] public HealthBar healthBar;//use healthBar.UpdateHealthBar(maxHealth, currentHealth); anytime the player takes damage
 
     void Start()
     {
