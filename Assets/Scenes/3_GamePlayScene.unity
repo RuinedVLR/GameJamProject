@@ -203,6 +203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -368,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -641,6 +649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -871,6 +883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -930,6 +946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1265,6 +1285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1356,6 +1380,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1490,6 +1518,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1626,6 +1658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1686,6 +1722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1745,6 +1785,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1870,6 +1914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1961,6 +2009,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2096,6 +2148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2230,6 +2286,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2700,6 +2760,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3814859576075745630, guid: 0518dead5d0cb464a8424df568b526b5, type: 3}
   m_PrefabInstance: {fileID: 255168719}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &266374023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266374024}
+  m_Layer: 0
+  m_Name: GameObject (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &266374024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266374023}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.222492, y: -43.48294, z: 24.22761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277997648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,6 +2981,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3310,6 +3405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3369,6 +3468,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3536,6 +3639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3627,6 +3734,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3752,6 +3863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3811,6 +3926,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4116,6 +4235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4175,6 +4298,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4412,6 +4539,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4732,6 +4863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5004,6 +5139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5063,6 +5202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5261,6 +5404,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5534,6 +5681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5575,10 +5726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c291ee9a3ce25ea4282aa0f391fecf85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  patrolPoints: []
+  Player: {fileID: 1854931385}
+  patrolPoints:
+  - {fileID: 1328858990}
+  - {fileID: 634139157}
+  - {fileID: 788211968}
+  - {fileID: 1819032701}
+  - {fileID: 902560548}
+  - {fileID: 266374024}
   waitTime: 2
-  agrostance: 1.4
   walkspeed: 2
   agrospeed: 6.5
   SightRange: 7.5
@@ -5589,7 +5745,7 @@ MonoBehaviour:
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 128
-  range: 10
+  range: 0
 --- !u!195 &485701442
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5697,10 +5853,11 @@ Transform:
   m_GameObject: {fileID: 485701440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.43, y: 1.12, z: -11.05}
+  m_LocalPosition: {x: -6.43, y: 1.12, z: -13.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1002165200}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &486035891
@@ -5754,6 +5911,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6229,6 +6390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6288,6 +6453,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6591,6 +6760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6651,6 +6824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6710,6 +6887,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6880,6 +7061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6939,6 +7124,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7138,6 +7327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7272,6 +7465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7396,6 +7593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7455,6 +7656,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7538,6 +7743,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8676945940121858603, guid: 68281b4a2a241cd4a89122f26976a0a3, type: 3}
   m_PrefabInstance: {fileID: 632449828}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &634139156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634139157}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634139157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634139156}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.342491, y: -43.48294, z: -6.302391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &638878691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
@@ -7770,6 +8006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7829,6 +8069,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8695,6 +8939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36657,6 +36905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36748,6 +37000,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36841,6 +37097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36900,6 +37160,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37057,6 +37321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37149,6 +37417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37231,6 +37503,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5501836233702448109, guid: 04dd8d67474a84747ba48a3b6045e9c2, type: 3}
   m_PrefabInstance: {fileID: 780901791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &788211967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788211968}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788211968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788211967}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.342491, y: -43.48294, z: 55.02761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &792506002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37357,6 +37660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37416,6 +37723,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37477,6 +37788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37536,6 +37851,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37945,6 +38264,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6184691444563106350, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+--- !u!1 &902560547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902560548}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902560548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902560547}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.777507, y: -43.48294, z: 24.22761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &903104514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37996,6 +38346,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38089,6 +38443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38181,6 +38539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38240,6 +38602,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38375,6 +38741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38383,6 +38753,59 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1772176039}
   m_SourcePrefab: {fileID: 100100000, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+--- !u!1 &1002165199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002165200}
+  - component: {fileID: 1002165201}
+  m_Layer: 0
+  m_Name: DamageCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1002165200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002165199}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 485701446}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1002165201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002165199}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4527426, y: 1.5420805, z: 1.1215286}
+  m_Center: {x: 0.025534153, y: -0.085579574, z: 0.060764313}
 --- !u!1001 &1010747274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38434,6 +38857,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38494,6 +38921,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38703,6 +39134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38762,6 +39197,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38854,6 +39293,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39207,6 +39650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39490,6 +39937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39624,6 +40075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39716,6 +40171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39775,6 +40234,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40107,6 +40570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40199,6 +40666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40258,6 +40729,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40424,6 +40899,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40677,6 +41156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40811,6 +41294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40819,6 +41306,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1987434816}
   m_SourcePrefab: {fileID: 100100000, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+--- !u!1 &1328858989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328858990}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328858990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328858989}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.937508, y: -43.48294, z: -6.302391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329759378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
@@ -40902,6 +41420,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41082,6 +41604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41173,6 +41699,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
       propertyPath: m_Name
       value: headstonecross_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41297,7 +41827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1376213250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Graves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41483,6 +42013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41542,6 +42076,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41709,6 +42247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41769,6 +42311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41828,6 +42374,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42138,6 +42688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42230,6 +42784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42289,6 +42847,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42445,6 +43007,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42664,6 +43230,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486042129}
   m_CullTransparentMesh: 1
+--- !u!1 &1488145618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488145619}
+  m_Layer: 0
+  m_Name: Dest Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1488145619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488145618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.522492, y: 43.90294, z: -19.72761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1328858990}
+  - {fileID: 634139157}
+  - {fileID: 788211968}
+  - {fileID: 1819032701}
+  - {fileID: 902560548}
+  - {fileID: 266374024}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502798014 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
@@ -42812,6 +43415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42871,6 +43478,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42932,6 +43543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42991,6 +43606,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43126,6 +43745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: memorialfulllength_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43217,6 +43840,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43352,6 +43979,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43764,6 +44395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43992,6 +44627,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44302,6 +44941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44394,6 +45037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44453,6 +45100,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44545,6 +45196,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44952,6 +45607,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6184691444563106350, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+--- !u!1 &1819032700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819032701}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1819032701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819032700}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.37751, y: -43.48294, z: 54.62761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488145619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1838084134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45003,6 +45689,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45095,6 +45785,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45251,6 +45945,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8676945940121858603, guid: 68281b4a2a241cd4a89122f26976a0a3, type: 3}
   m_PrefabInstance: {fileID: 1854119851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1854931385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6901516189008370268, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
+  m_PrefabInstance: {fileID: 1672929410}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1858698393
 PrefabInstance:
@@ -45452,6 +46151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45650,6 +46353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45742,6 +46449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45802,6 +46513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonecross_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6491873e9928b2b4480b8f7c33e0b879, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45861,6 +46576,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46212,6 +46931,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
       propertyPath: m_Name
       value: headstonebasic_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46993,6 +47716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47053,6 +47780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: headstonebasic_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f6bfe13b5102c742abc4dd737f976f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47112,6 +47843,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
       propertyPath: m_Name
       value: memorialfulllength_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45d4ad910bba1584ba2314a6e1dee94d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47208,3 +47943,4 @@ SceneRoots:
   - {fileID: 1940034644}
   - {fileID: 738535447}
   - {fileID: 1705128368}
+  - {fileID: 1488145619}

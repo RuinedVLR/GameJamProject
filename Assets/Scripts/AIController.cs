@@ -10,7 +10,6 @@ public class AIController : MonoBehaviour
     Vector3 DestPoint;
     public List<Transform> patrolPoints;
     public float waitTime = 2f;
-    public float agrostance = 1.4f;
     public float walkspeed = 2f;
     public float agrospeed = 6.5f;
     Transform LastDestination;
@@ -104,8 +103,6 @@ public class AIController : MonoBehaviour
                     print("hit");
                 }
             }
-
-
     }
 
     void Update()
