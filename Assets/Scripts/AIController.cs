@@ -83,7 +83,7 @@ public class AIController : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        var Player = other.GetComponent<CharacterController>();
+        var Player = other.GetComponent<PlayerController>();
         if(Player != null)
         {
             print("hit");
@@ -98,8 +98,8 @@ public class AIController : MonoBehaviour
         if(PlayerInSight && !PlayerInAttackRange)Chase();
         if(PlayerInSight && PlayerInAttackRange)Attack();
 
-        //if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)
         //if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
             StartCoroutine(WaitAtPoint());
         }
