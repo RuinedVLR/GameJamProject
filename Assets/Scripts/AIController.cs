@@ -116,6 +116,7 @@ public class AIController : MonoBehaviour
                     // apply damage to player
                     playerScript.currentHealth -= 50;
                     print("hit");
+                    yield return new WaitForSeconds(2.5f);
                 }
             }
     }
