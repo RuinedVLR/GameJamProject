@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.2296212, g: 0.16571732, b: 0.26415092, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f531e09e2ad2fb440b4eed7605863143, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 410087040}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Sun/Moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,7 +1053,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.754717, g: 0.3737985, b: 0.3737985, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -1097,7 +1097,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 7681
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -29840,6 +29840,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 660174969}
+  - {fileID: 1106818046}
+  - {fileID: 852350525}
+  - {fileID: 773034530}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &738535448
@@ -29976,11 +29979,11 @@ Transform:
   m_GameObject: {fileID: 773034526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0466957, y: 0.3099997, z: 13.969997}
-  m_LocalScale: {x: -21.957, y: 1, z: 1}
+  m_LocalPosition: {x: 9.708216, y: 0.7988626, z: 13.816008}
+  m_LocalScale: {x: -5.6312995, y: 0.5747214, z: 0.25646943}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 738535447}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
@@ -30081,7 +30084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.16470589}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.16470589}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30208,11 +30211,11 @@ Transform:
   m_GameObject: {fileID: 852350521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0466957, y: 0.3099997, z: -19.44}
-  m_LocalScale: {x: -21.957, y: 1, z: 1}
+  m_LocalPosition: {x: 9.708216, y: 0.7988626, z: 5.247365}
+  m_LocalScale: {x: -5.6312995, y: 0.5747214, z: 0.25646943}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 738535447}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1064579918
 GameObject:
@@ -30513,11 +30516,11 @@ Transform:
   m_GameObject: {fileID: 1106818042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0466957, y: 0.3099997, z: -1.6628265}
-  m_LocalScale: {x: -21.957, y: 1, z: 1}
+  m_LocalPosition: {x: 9.708216, y: 0.7988626, z: 9.806666}
+  m_LocalScale: {x: -5.6312995, y: 0.5747214, z: 0.25646943}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 738535447}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179637509
 GameObject:
@@ -31796,12 +31799,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 277997652}
+  - {fileID: 1344915203}
   - {fileID: 1234642724}
   - {fileID: 485701446}
-  - {fileID: 277997652}
   - {fileID: 1940034644}
-  - {fileID: 1344915203}
-  - {fileID: 1106818046}
-  - {fileID: 852350525}
-  - {fileID: 773034530}
   - {fileID: 738535447}
