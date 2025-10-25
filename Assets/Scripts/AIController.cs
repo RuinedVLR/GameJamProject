@@ -56,6 +56,7 @@ public class AIController : MonoBehaviour
     void SearchForDest()
     {
         if (patrolPoints.Count == 0) return;
+        
         do
         {
             nextDestination = patrolPoints[Random.Range(0, patrolPoints.Count)];
