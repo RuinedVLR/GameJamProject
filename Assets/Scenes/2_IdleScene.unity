@@ -359,6 +359,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129198525}
   m_CullTransparentMesh: 1
+--- !u!1 &164058546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011881196238, guid: beb87db6153f69442821a348e08035ab, type: 3}
+  m_PrefabInstance: {fileID: 1279307378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &184073791
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4553198f6146fa744833c8e2d73748c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 
+  message: Read Note
   isShovelPresent: 0
   isFlashlightPresent: 0
   isCrowbarPresent: 0
@@ -2422,10 +2427,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 815662327}
-  - component: {fileID: 815662328}
+  - component: {fileID: 815662330}
+  - component: {fileID: 815662329}
+  - component: {fileID: 815662331}
   m_Layer: 0
   m_Name: Crowbar
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2446,28 +2453,76 @@ Transform:
   - {fileID: 4995104936978236242}
   m_Father: {fileID: 1566664632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &815662328
-Animator:
-  serializedVersion: 7
+--- !u!114 &815662329
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815662326}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a7a44d04277265e43b4f5b8b87ac9be6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4553198f6146fa744833c8e2d73748c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pick up Crowbar
+  isShovelPresent: 0
+  isFlashlightPresent: 0
+  isCrowbarPresent: 0
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 815662329}
+        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
+        m_MethodName: PickCrowbar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 815662326}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &815662330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815662326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!65 &815662331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815662326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.65, y: 1, z: 1}
+  m_Center: {x: -0.52, y: 0, z: -1.73}
 --- !u!1 &855482667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2735,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009939761}
   m_CullTransparentMesh: 1
+--- !u!1 &1013782727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6901516189008370268, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
+  m_PrefabInstance: {fileID: 1492645194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013782733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013782727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca218e9d92bd3940870e6d2bde26d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerReach: 3
 --- !u!1 &1043710567
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,13 +3333,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1000011881196238, guid: beb87db6153f69442821a348e08035ab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1279307387}
   m_SourcePrefab: {fileID: 100100000, guid: beb87db6153f69442821a348e08035ab, type: 3}
 --- !u!4 &1279307381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011682998410, guid: beb87db6153f69442821a348e08035ab, type: 3}
   m_PrefabInstance: {fileID: 1279307378}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1279307387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164058546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7363219, y: 7.580197, z: 1.16}
+  m_Center: {x: 0.000000029802322, y: 0, z: 0}
 --- !u!1001 &1292403810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3289,15 +3386,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.952
+      value: 6.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.102
+      value: -15.27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3331,6 +3428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FLASHLIGHT-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3338,6 +3439,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292403813}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292403815}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292403814}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292403818}
   m_SourcePrefab: {fileID: 100100000, guid: d9bbe12351558c94d9ecc5e175b46af2, type: 3}
 --- !u!4 &1292403811 stripped
 Transform:
@@ -3371,6 +3481,76 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1292403814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292403812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1292403815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292403812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4553198f6146fa744833c8e2d73748c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pick up Flashlight
+  isShovelPresent: 0
+  isFlashlightPresent: 0
+  isCrowbarPresent: 0
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1292403815}
+        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
+        m_MethodName: PickFlashlight
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1292403812}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1292403818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292403812}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.974124, y: 5.24, z: 6.0655775}
+  m_Center: {x: 0.056622148, y: 0.17173743, z: 0.003883481}
 --- !u!1 &1466252495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +3742,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6901516189008370268, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1013782733}
   m_SourcePrefab: {fileID: 100100000, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
 --- !u!1 &1566664626
 GameObject:
