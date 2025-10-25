@@ -7,6 +7,7 @@ public class Interactable : MonoBehaviour
 {
     Outline outline;
     public string message;
+    public bool isShovelPresent;
 
     public UnityEvent onInteraction;
 
@@ -36,6 +37,12 @@ public class Interactable : MonoBehaviour
     public void RunStart()
     {
         SceneManager.LoadScene("3_GamePlayScene");
+    }
+
+    public void PickShovel(GameObject shovel)
+    {
+        isShovelPresent = true;
+        shovel.SetActive(false);
     }
 
 }
