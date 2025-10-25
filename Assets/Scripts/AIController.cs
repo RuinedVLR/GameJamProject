@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,11 +8,17 @@ public class AIController : MonoBehaviour
     public GameObject Player;
     NavMeshAgent agent;
     Vector3 DestPoint;
+    public List<Transform> patrolPoints;
+    public float waitTime = 2f;
+    Transform LastDestination;
+    Transform CurrentDestination;
+    Transform nextDestination;
     [SerializeField] float SightRange, AttackRange;
     [SerializeField] LayerMask GroundLayer, PlayerLayer;
     [SerializeField] float range;
     bool HitDestPoint;
     bool WalkPointSet;
+    bool isWaiting = false;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
     void Start()
@@ -18,6 +26,7 @@ public class AIController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         Player = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
+        SearchForDest();
     }
     void Chase()
     {
@@ -29,15 +38,36 @@ public class AIController : MonoBehaviour
         if(WalkPointSet) agent.SetDestination(DestPoint);
         if(Vector3.Distance(transform.position, DestPoint)< 10) WalkPointSet = false;
     }
+
+    IEnumerator WaitAtPoint()
+    {
+        isWaiting = true;
+        yield return new WaitForSeconds(waitTime);
+        SearchForDest();
+        isWaiting = false;
+    }
+
     void SearchForDest()
     {
-        float x = Random.Range(-range, range);
-        float z = Random.Range(-range, range);
-        DestPoint = new Vector3(transform.position.x + x, transform.position.y,transform.position.z + z);
-        if (Physics.Raycast(DestPoint, Vector3.down, GroundLayer))
+
+        if (patrolPoints.Count == 0) return;
+
+        
+        do
         {
-            WalkPointSet = true;
-        }
+            nextDestination = patrolPoints[Random.Range(0, patrolPoints.Count)];
+        } while (nextDestination == LastDestination && patrolPoints.Count > 1);
+
+        CurrentDestination = nextDestination;
+        LastDestination = CurrentDestination;
+        agent.SetDestination(CurrentDestination.position);
+        //float x = Random.Range(-range, range);
+        //float z = Random.Range(-range, range);
+        //DestPoint = new Vector3(transform.position.x + x, transform.position.y,transform.position.z + z);
+        //if (Physics.Raycast(DestPoint, Vector3.down, GroundLayer))
+        //{
+        //    WalkPointSet = true;
+        //}
     }
     void Attack()
     {
@@ -67,5 +97,12 @@ public class AIController : MonoBehaviour
         if(!PlayerInSight && !PlayerInAttackRange)Patrol();
         if(PlayerInSight && !PlayerInAttackRange)Chase();
         if(PlayerInSight && PlayerInAttackRange)Attack();
+
+        //if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)
+        //if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        {
+            StartCoroutine(WaitAtPoint());
+        }
+
     }
 }

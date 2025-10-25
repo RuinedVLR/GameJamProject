@@ -1015,8 +1015,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1234642720}
-  SightRange: 0
-  AttackRange: 0
+  patrolPoints: []
+  waitTime: 2
+  SightRange: 7.5
+  AttackRange: 2
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -2457,6 +2459,9 @@ MonoBehaviour:
   sensitivity: 2
   jumpHeight: 1.5
   gravity: -9.81
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!143 &1234642726
 CharacterController:
   m_ObjectHideFlags: 0
