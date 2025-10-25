@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c291ee9a3ce25ea4282aa0f391fecf85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1234642720}
+  Player: {fileID: 892048146}
   patrolPoints:
   - {fileID: 1296855438}
   - {fileID: 945749416}
@@ -30388,6 +30388,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
+--- !u!1 &892048146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3357901233627937984, guid: 86f25316fe6573d4990c6d0ac13a27a8, type: 3}
+  m_PrefabInstance: {fileID: 892048145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &945749412
 GameObject:
   m_ObjectHideFlags: 0
