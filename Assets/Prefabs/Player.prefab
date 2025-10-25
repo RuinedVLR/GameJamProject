@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2532539052941491611}
   - component: {fileID: 6636956200902250616}
   - component: {fileID: 7988600939180864137}
+  - component: {fileID: 3588947848433582164}
   - component: {fileID: 4238288684596046466}
   m_Layer: 0
   m_Name: Player
@@ -105,9 +106,27 @@ MonoBehaviour:
   sensitivity: 2
   jumpHeight: 1.5
   gravity: -9.81
+  crouchSpeed: 6
+  crouchHeight: 0.8
+  normalHeight: 3
+  offset: {x: 0, y: 1, z: 0}
+  player: {fileID: 8137232284096270945}
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+--- !u!114 &3588947848433582164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6901516189008370268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca218e9d92bd3940870e6d2bde26d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerReach: 3
 --- !u!143 &4238288684596046466
 CharacterController:
   m_ObjectHideFlags: 0
