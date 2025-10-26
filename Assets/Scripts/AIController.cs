@@ -10,7 +10,7 @@ public class AIController : MonoBehaviour
     NavMeshAgent agent;
     Vector3 DestPoint;
     public List<Transform> patrolPoints;
-    public float waitTime = 2f;
+    public float waitTime = 1.5f;
     public float walkspeed = 2f;
     public float agrospeed = 6.5f;
     public float attackCooldown = 2.2f;
