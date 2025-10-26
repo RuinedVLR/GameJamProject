@@ -79,6 +79,11 @@ public class PlayerController : MonoBehaviour
 
             transform.Rotate(Vector3.up * mouseX);
             Camera.main.transform.localRotation *= Quaternion.Euler(-mouseY, 0, 0);
+            Time.timeScale = 1;
+        }
+        else if(Interactable.isReading)
+        {
+            Time.timeScale = 0;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
