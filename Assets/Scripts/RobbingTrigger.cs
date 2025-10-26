@@ -3,6 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using System;
+using Image = UnityEngine.UI.Image;
 
 public class RobbingTrigger : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class RobbingTrigger : MonoBehaviour
     public TextMeshProUGUI moneyCount;
     public int money = 0;
     private System.Random rand = new();
+    [SerializeField] public Image waitBarSprite;
 
     // Update is called once per frame
     void Update()
