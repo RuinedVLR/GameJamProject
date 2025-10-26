@@ -13,7 +13,7 @@ public class AIController : MonoBehaviour
     public float waitTime = 2f;
     public float walkspeed = 2f;
     public float agrospeed = 6.5f;
-    public float attackCooldown = 2.5f;
+    public float attackCooldown = 2.2f;
     Transform LastDestination;
     Transform CurrentDestination;
     Transform nextDestination;
@@ -107,7 +107,7 @@ public class AIController : MonoBehaviour
     }
     void Attack()
     {
-        agent.SetDestination(transform.position);
+        //agent.SetDestination(transform.position);
     }
 
     void EnableAttack()
@@ -156,44 +156,44 @@ public class AIController : MonoBehaviour
         }
     }*/
 
-    void OnTriggerStay(Collider other)
-    {
-        if (!canAttack) return;
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if (!canAttack) return;
 
-        if (other.CompareTag("Player"))
-        {
-            float distanceToPlayer = Vector3.Distance(transform.position, other.transform.position);
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        float distanceToPlayer = Vector3.Distance(transform.position, other.transform.position);
 
-            if (distanceToPlayer <= AttackRange)
-            {
-                PlayerController playerController = other.GetComponent<PlayerController>();
-                if (playerController != null)
-                {
-                    playerController.TakeDamage(50); // Apply damage
-                    StartCoroutine(AttackCooldown());
-                    Debug.Log("Player damaged by proximity inside trigger.");
-                }
-            }
-        }
-    }
+    //        if (distanceToPlayer <= AttackRange)
+    //        {
+    //            PlayerController playerController = other.GetComponent<PlayerController>();
+    //            if (playerController != null)
+    //            {
+    //                playerController.TakeDamage(50); // Apply damage
+    //                StartCoroutine(AttackCooldown());
+    //                Debug.Log("Player damaged by proximity inside trigger.");
+    //            }
+    //        }
+    //    }
+    //}
 
     void Update()
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 
-        //float distanceToPlayer = Vector3.Distance(transform.position, playerScript.transform.position);
+        float distanceToPlayer = Vector3.Distance(transform.position, playerScript.transform.position);
 
-        //if (distanceToPlayer <= AttackRange && canAttack)
-        //{
-        //    PlayerController playerController = playerScript.GetComponent<PlayerController>();
-        //    if (playerController != null)
-        //    {
-        //        playerController.TakeDamage(50);
-        //        StartCoroutine(AttackCooldown());
-        //        Debug.Log("Player damaged due to proximity.");
-        //    }
-        //}
+        if (distanceToPlayer <= AttackRange && canAttack)
+        {
+            PlayerController playerController = playerScript.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                playerController.TakeDamage(50);
+                StartCoroutine(AttackCooldown());
+                Debug.Log("Player damaged to proximity");
+            }
+        }
 
         if (!PlayerInSight && !PlayerInAttackRange)
         {
