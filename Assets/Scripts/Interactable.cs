@@ -1,12 +1,20 @@
+using System;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Interactable : MonoBehaviour
 {
+    private System.Random rand = new System.Random();
+    
     Outline outline;
     public string message;
+
+    public TextMeshProUGUI money;
+    public int moneyCount = 0;
 
     public bool isShovelPresent;
     public bool isFlashlightPresent;
@@ -21,6 +29,12 @@ public class Interactable : MonoBehaviour
     {
         outline = GetComponent<Outline>();
         DisableOutline();
+        
+    }
+
+    private void Update()
+    {
+        money.text = "Money: " + moneyCount.ToString();
     }
 
     public void Interact()
@@ -65,7 +79,12 @@ public class Interactable : MonoBehaviour
     {
         noteText.SetActive(true);
         isReading = true;
-        Cursor.visible = true;
+        UnityEngine.Cursor.visible = true;
         Time.timeScale = 0f;
+    }
+    
+    public void Rob(GameObject grave)
+    {
+        grave.SetActive(false);
     }
 }
