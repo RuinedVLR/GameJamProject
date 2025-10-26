@@ -54462,6 +54462,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1854931385}
     - target: {fileID: 7347301990485794667, guid: a4d1180817f3d68449f80d3b0154c776, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 1854931385}
+    - target: {fileID: 7347301990485794667, guid: a4d1180817f3d68449f80d3b0154c776, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
       objectReference: {fileID: 78279683}

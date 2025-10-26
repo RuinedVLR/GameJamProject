@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c291ee9a3ce25ea4282aa0f391fecf85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  playerScript: {fileID: 0}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -291,6 +291,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   range: 0
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &7045129792041833190
 GameObject:
   m_ObjectHideFlags: 0

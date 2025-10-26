@@ -34,6 +34,9 @@ public class AIController : MonoBehaviour
 
     void Start()
     {
+        if (healthBar == null)
+            healthBar = GameObject.Find("HealthBar").GetComponent<HealthBar>();
+
         agent = GetComponent<NavMeshAgent>();
         playerScript = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
@@ -114,7 +117,7 @@ public class AIController : MonoBehaviour
     {
         AttackCollider.enabled = false;
     }
-    /*public void OnCollision(Collider other)
+    public void OnCollision(Collider other)
     {
         var Player = other.GetComponent<PlayerController>();
         if (Player != null)
@@ -127,15 +130,16 @@ public class AIController : MonoBehaviour
                 else if (playerScript != null)
                 {
                     // apply damage to player
-                    playerScript.currentHealth -= 50;
-                    
+                    currentHealth -= 50;
+                    healthBar.UpdateHealthBar(maxHealth, currentHealth);
+
                     StartCoroutine(AttackCooldown());
                     Debug.Log("hit");
                 }
             }
     }
-    */
-    public void OnTriggerEnter(Collider other)
+    
+    /*public void OnTriggerEnter(Collider other)
     {
         if(!canAttack) return;
         if (other.CompareTag("Player"))
@@ -143,12 +147,13 @@ public class AIController : MonoBehaviour
             PlayerController playerScript = other.GetComponent<PlayerController> ();
             if(playerScript != null)
             {
-                playerScript.TakeDamage(25); //call the method on PlayerController instead of editing health directly 
+                playerScript.TakeDamage(25); //call the method on PlayerController instead of editing health directly
+                healthBar.UpdateHealthBar(maxHealth, currentHealth);
                 StartCoroutine(AttackCooldown());
                 Debug.Log("Enemy hit the Player!");
             }
         }
-    }
+    }*/
     void Update()
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
