@@ -6,5 +6,6 @@ public class NoteScript : MonoBehaviour
     {
         Interactable.isReading = false;
         noteText.SetActive(false);
+        UnityEngine.Cursor.visible = false;
     }
 }

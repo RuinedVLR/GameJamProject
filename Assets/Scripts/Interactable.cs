@@ -78,8 +78,8 @@ public class Interactable : MonoBehaviour
     public void ReadNote(GameObject noteText)
     {
         noteText.SetActive(true);
-        isReading = true;
         UnityEngine.Cursor.visible = true;
+        isReading = true;
         Time.timeScale = 0f;
     }
     
