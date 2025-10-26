@@ -5926,6 +5926,7 @@ MonoBehaviour:
   waitTime: 3.3
   walkspeed: 3.2
   agrospeed: 6.5
+  attackCooldown: 2.5
   SightRange: 9.1
   AttackRange: 2
   GroundLayer:
