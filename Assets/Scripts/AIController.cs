@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class AIController : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject playerScript;
     NavMeshAgent agent;
     Vector3 DestPoint;
     public List<Transform> patrolPoints;
@@ -26,10 +27,16 @@ public class AIController : MonoBehaviour
     bool canAttack = true;
     bool PlayerInSight, PlayerInAttackRange;
     BoxCollider AttackCollider;
+    //Health
+    public float maxHealth = 100;
+    public float currentHealth; //take damage: currentHealth -= 20;
+    [SerializeField] public HealthBar healthBar;//use healthBar.UpdateHealthBar(maxHealth, currentHealth); anytime the player takes damage
+
     void Start()
     {
+        currentHealth = maxHealth;
         agent = GetComponent<NavMeshAgent>();
-        Player = GameObject.Find("Player");
+        playerScript = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
         SearchForDest();
         agent.speed = walkspeed;
@@ -38,7 +45,7 @@ public class AIController : MonoBehaviour
     {
 
         agent.speed = agrospeed;
-        agent.SetDestination(Player.transform.position);
+        agent.SetDestination(playerScript.transform.position);
     }
     void Patrol()
     {
@@ -99,6 +106,18 @@ public class AIController : MonoBehaviour
     {
         agent.SetDestination(transform.position);
     }
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
     void EnableAttack()
     {
         AttackCollider.enabled = true;
@@ -127,7 +146,20 @@ public class AIController : MonoBehaviour
                 }
             }
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if(!canAttack) return;
+        if (other.CompareTag("Player"))
+        {
+            PlayerController playerScript = other.GetComponent<PlayerController> ();
+            if(playerScript != null)
+            {
+                playerScript.TakeDamage(25); //call the method on PlayerController instead of editing health directly 
+                StartCoroutine(AttackCooldown());
+                Debug.Log("Enemy hit the Player!");
+            }
+        }
+    }
     void Update()
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
