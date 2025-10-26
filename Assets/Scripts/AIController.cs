@@ -31,12 +31,13 @@ public class AIController : MonoBehaviour
     public float maxHealth = 100;
     public float currentHealth; //take damage: currentHealth -= 20;
     [SerializeField] public HealthBar healthBar;//use healthBar.UpdateHealthBar(maxHealth, currentHealth); anytime the player takes damage
+    public Rigidbody body;
 
     void Start()
     {
         if (healthBar == null)
             healthBar = GameObject.Find("HealthBar").GetComponent<HealthBar>();
-
+        Rigidbody rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
         playerScript = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
@@ -117,28 +118,28 @@ public class AIController : MonoBehaviour
     {
         AttackCollider.enabled = false;
     }
-    public void OnCollision(Collider other)
-    {
-        var Player = other.GetComponent<PlayerController>();
-        if (Player != null)
-            if (other.gameObject.CompareTag("Player"))
-            {
 
-                PlayerController playerScript = other.GetComponent<PlayerController>();
-                if (playerScript == null) Debug.LogError("PlayerController not found");
+    //public void OnCollision(Collider other)
+    //{
+    //    var Player = other.GetComponent<PlayerController>();
+    //    if (Player != null)
+    //        if (other.gameObject.CompareTag("Player"))
+    //        {
+    //            Debug.Log("Collided with player.");
+    //            PlayerController playerScript = other.GetComponent<PlayerController>();
+    //            if (playerScript == null) Debug.LogError("PlayerController not found");
+    //            else if (playerScript != null)
+    //            {
+    //                // apply damage to player
+    //                currentHealth -= 50;
+    //                healthBar.UpdateHealthBar(maxHealth, currentHealth);
 
-                else if (playerScript != null)
-                {
-                    // apply damage to player
-                    playerScript.currentHealth -= 50;
-                    healthBar.UpdateHealthBar(maxHealth, currentHealth);
+    //                StartCoroutine(AttackCooldown());
+    //                Debug.Log("hit");
+    //            }
+    //        }
+    //}
 
-                    StartCoroutine(AttackCooldown());
-                    Debug.Log("hit");
-                }
-            }
-    }
-    
     /*public void OnTriggerEnter(Collider other)
     {
         if(!canAttack) return;
@@ -154,10 +155,45 @@ public class AIController : MonoBehaviour
             }
         }
     }*/
+
+    void OnTriggerStay(Collider other)
+    {
+        if (!canAttack) return;
+
+        if (other.CompareTag("Player"))
+        {
+            float distanceToPlayer = Vector3.Distance(transform.position, other.transform.position);
+
+            if (distanceToPlayer <= AttackRange)
+            {
+                PlayerController playerController = other.GetComponent<PlayerController>();
+                if (playerController != null)
+                {
+                    playerController.TakeDamage(50); // Apply damage
+                    StartCoroutine(AttackCooldown());
+                    Debug.Log("Player damaged by proximity inside trigger.");
+                }
+            }
+        }
+    }
+
     void Update()
     {
         PlayerInSight = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
+
+        //float distanceToPlayer = Vector3.Distance(transform.position, playerScript.transform.position);
+
+        //if (distanceToPlayer <= AttackRange && canAttack)
+        //{
+        //    PlayerController playerController = playerScript.GetComponent<PlayerController>();
+        //    if (playerController != null)
+        //    {
+        //        playerController.TakeDamage(50);
+        //        StartCoroutine(AttackCooldown());
+        //        Debug.Log("Player damaged due to proximity.");
+        //    }
+        //}
 
         if (!PlayerInSight && !PlayerInAttackRange)
         {
@@ -184,7 +220,7 @@ public class AIController : MonoBehaviour
         //if (PlayerInSight && PlayerInAttackRange) Attack();
 
         //if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
-        if (!isWaiting && !agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!isWaiting && !agent.pathPending && agent.remainingDistance < 1f)
         {
             StartCoroutine(WaitAtPoint());
         }

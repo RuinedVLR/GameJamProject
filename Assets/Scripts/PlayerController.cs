@@ -19,9 +19,6 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Vector3 velocity;
     private CharacterController controller;
-
-    public MenuSystem menuSystem;
-    private Rigidbody rb;
     //Health
     public float maxHealth = 100;
     public float currentHealth; //take damage: currentHealth -= 20;
@@ -29,40 +26,22 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        menuSystem = FindObjectOfType<MenuSystem>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        Time.timeScale = 1;
+        currentHealth = maxHealth;
         controller = GetComponent<CharacterController>();
-        rb = GetComponent<Rigidbody>();
-
-        
+        Cursor.visible = false;
     }
-
-    private void OnCollisionEnter(Collision collision)
+    public void TakeDamage(float amount)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        currentHealth -= amount;
+        if(currentHealth <= 0)
         {
-            currentHealth -= 20;
-            healthBar.UpdateHealthBar(maxHealth, currentHealth);
-            //soundmanager.playsound(SoundType.HITSOUND);
-
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if( currentHealth <= 0)
-            {
-                SceneManager.LoadSceneAsync(1);
-                Debug.Log("You Died!");
-            }
+            Die();
         }
     }
-    void OnTriggerEnter(Collider other)
+    void Die()
     {
-        if (other.gameObject.CompareTag("Catcher"))
-        {
-            SceneManager.LoadSceneAsync(2);
-        }
+        SceneManager.LoadSceneAsync(2);
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -129,14 +108,6 @@ public class PlayerController : MonoBehaviour
                 controller.height = normalHeight;
             }
         }
-        //pause game
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            menuSystem.PauseGame();
-        }
-        else //unpause game
-        {
-            menuSystem.PauseEscape();
-        }
+
     }
 }
