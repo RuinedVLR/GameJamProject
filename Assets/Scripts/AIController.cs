@@ -34,7 +34,6 @@ public class AIController : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
         agent = GetComponent<NavMeshAgent>();
         playerScript = GameObject.Find("Player");
         AttackCollider = GetComponentInChildren<BoxCollider>();
@@ -106,18 +105,7 @@ public class AIController : MonoBehaviour
     {
         agent.SetDestination(transform.position);
     }
-    public void TakeDamage(float amount)
-    {
-        currentHealth -= amount;
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-    void Die()
-    {
-        SceneManager.LoadSceneAsync(2);
-    }
+
     void EnableAttack()
     {
         AttackCollider.enabled = true;
@@ -126,7 +114,7 @@ public class AIController : MonoBehaviour
     {
         AttackCollider.enabled = false;
     }
-    public void OnCollision(Collider other)
+    /*public void OnCollision(Collider other)
     {
         var Player = other.GetComponent<PlayerController>();
         if (Player != null)
@@ -146,7 +134,8 @@ public class AIController : MonoBehaviour
                 }
             }
     }
-    private void OnTriggerEnter(Collider other)
+    */
+    public void OnTriggerEnter(Collider other)
     {
         if(!canAttack) return;
         if (other.CompareTag("Player"))

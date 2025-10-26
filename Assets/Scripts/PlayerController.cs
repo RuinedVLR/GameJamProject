@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,10 +26,22 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
         controller = GetComponent<CharacterController>();
         Cursor.visible = false;
     }
-
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
     // Update is called once per frame
     void Update()
     {
