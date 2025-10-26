@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Vector3 velocity;
     private CharacterController controller;
+
+    public MenuSystem menuSystem;
+    private Rigidbody rb;
     //Health
     public float maxHealth = 100;
     public float currentHealth; //take damage: currentHealth -= 20;
@@ -26,22 +29,40 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        controller = GetComponent<CharacterController>();
+        menuSystem = FindObjectOfType<MenuSystem>();
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Time.timeScale = 1;
+        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+
+        
     }
-    public void TakeDamage(float amount)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        currentHealth -= amount;
-        if(currentHealth <= 0)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Die();
+            currentHealth -= 20;
+            healthBar.UpdateHealthBar(maxHealth, currentHealth);
+            //soundmanager.playsound(SoundType.HITSOUND);
+
+            Rigidbody rb = GetComponent<Rigidbody>();
+            if( currentHealth <= 0)
+            {
+                SceneManager.LoadSceneAsync(1);
+                Debug.Log("You Died!");
+            }
         }
     }
-    void Die()
+    void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadSceneAsync(2);
+        if (other.gameObject.CompareTag("Catcher"))
+        {
+            SceneManager.LoadSceneAsync(2);
+        }
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -108,6 +129,14 @@ public class PlayerController : MonoBehaviour
                 controller.height = normalHeight;
             }
         }
-
+        //pause game
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menuSystem.PauseGame();
+        }
+        else //unpause game
+        {
+            menuSystem.PauseEscape();
+        }
     }
 }

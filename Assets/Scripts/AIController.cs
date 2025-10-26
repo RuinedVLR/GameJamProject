@@ -130,7 +130,7 @@ public class AIController : MonoBehaviour
                 else if (playerScript != null)
                 {
                     // apply damage to player
-                    currentHealth -= 50;
+                    playerScript.currentHealth -= 50;
                     healthBar.UpdateHealthBar(maxHealth, currentHealth);
 
                     StartCoroutine(AttackCooldown());
