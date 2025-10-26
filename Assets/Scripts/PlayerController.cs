@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     }
     void Die()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(1);
     }
     // Update is called once per frame
     void Update()
