@@ -80,7 +80,6 @@ public class Interactable : MonoBehaviour
         noteText.SetActive(true);
         UnityEngine.Cursor.visible = true;
         isReading = true;
-        Time.timeScale = 0f;
     }
     
     public void Rob(GameObject grave)
